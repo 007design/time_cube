@@ -1,0 +1,26 @@
+{
+  "name": "time_cube_server",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "test": "mocha",
+    "start": "node start_server.js",
+    "client": "node start_client.js",
+    "app": "node_modules/.bin/electron lib/app.js"
+  },
+  "author": "Daniel Hinds-Bond <007@007design.com> (http://007design.com/)",
+  "license": "None",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "nightmare": "^2.10.0"
+  },
+  "optionalDependencies": {
+    "electron": "^1.6.11",
+    "socket.io-client": "^2.0.3"
+  }
+}
