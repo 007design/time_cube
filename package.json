@@ -5,6 +5,7 @@
   "scripts": {
     "test": "mocha",
     "start": "node start_server.js",
+    "server": "node start_server.js",
     "client": "node start_client.js",
     "app": "node_modules/.bin/electron lib/app.js"
   },

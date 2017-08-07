@@ -7,6 +7,7 @@ const assert = require('assert'),
 
 let s, c;
 describe('Start Server', function() {
+  this.timeout(10000);
   before(function() {
     s = server.startServer();
     c = client.startClient();
@@ -20,6 +21,7 @@ describe('Start Server', function() {
       show: true
     });
     nightmare.goto('http://localhost:8000')
+    .wait(6000)
     .end()
     .then(function() {
       done();
