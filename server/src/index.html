@@ -12,8 +12,12 @@
     });
 
     setTimeout(function() {
-      socket.emit('switch task', {name: 'new task'});
+      socket.emit('calibrate', {side: 4});
     }, 5000);
+
+    setTimeout(function() {
+      socket.emit('interval', {interval: 8000});
+    }, 10000);
   </script>
 </body>
 </html>

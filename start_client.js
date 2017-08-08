@@ -1,4 +1,4 @@
 'use strict';
 
-const client = require('./lib/client.js');
+const client = require('./client/client.js');
 client.startClient();

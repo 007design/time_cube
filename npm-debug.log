@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/dbond/.nvm/versions/node/v5.0.0/bin/node',
+1 verbose cli   '/Users/dbond/.nvm/versions/node/v5.0.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'server' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 verbose run-script [ 'preserver', 'server', 'postserver' ]
+5 info lifecycle time_cube_server@0.0.1~preserver: time_cube_server@0.0.1
+6 silly lifecycle time_cube_server@0.0.1~preserver: no script for preserver, continuing
+7 info lifecycle time_cube_server@0.0.1~server: time_cube_server@0.0.1
+8 verbose lifecycle time_cube_server@0.0.1~server: unsafe-perm in lifecycle true
+9 verbose lifecycle time_cube_server@0.0.1~server: PATH: /Users/dbond/.nvm/versions/node/v5.0.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/dbond/src/time_cube_server/node_modules/.bin:/Users/dbond/.nvm/versions/node/v5.0.0/bin:/opt/local/bin:/opt/local/sbin:/Users/dbond/.rvm/gems/ruby-2.1.0/bin:/Users/dbond/.rvm/gems/ruby-2.1.0@global/bin:/Users/dbond/.rvm/rubies/ruby-2.1.0/bin:bin:/opt/boxen/bin:/opt/boxen/homebrew/bin:/opt/boxen/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/munki:/opt/boxen/homebrew/Cellar/ruby/2.1.0/bin:/opt/boxen/homebrew/lib/node_modules/coffee-script/bin:/Users/dbond/.rvm/bin:/Users/dbond/.rvm/bin
+10 verbose lifecycle time_cube_server@0.0.1~server: CWD: /Users/dbond/src/time_cube_server
+11 silly lifecycle time_cube_server@0.0.1~server: Args: [ '-c', 'node start_server.js' ]
+12 silly lifecycle time_cube_server@0.0.1~server: Returned: code: 1  signal: null
+13 info lifecycle time_cube_server@0.0.1~server: Failed to exec server script
+14 verbose stack Error: time_cube_server@0.0.1 server: `node start_server.js`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/Users/dbond/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/dbond/.nvm/versions/node/v5.0.0/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:818:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid time_cube_server@0.0.1
+16 verbose cwd /Users/dbond/src/time_cube_server
+17 error Darwin 16.6.0
+18 error argv "/Users/dbond/.nvm/versions/node/v5.0.0/bin/node" "/Users/dbond/.nvm/versions/node/v5.0.0/bin/npm" "run" "server"
+19 error node v5.0.0
+20 error npm  v3.3.6
+21 error code ELIFECYCLE
+22 error time_cube_server@0.0.1 server: `node start_server.js`
+22 error Exit status 1
+23 error Failed at the time_cube_server@0.0.1 server script 'node start_server.js'.
+23 error This is most likely a problem with the time_cube_server package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node start_server.js
+23 error You can get their info via:
+23 error     npm owner ls time_cube_server
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]

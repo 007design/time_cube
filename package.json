@@ -7,12 +7,11 @@
     "start": "node start_server.js",
     "server": "node start_server.js",
     "client": "node start_client.js",
-    "app": "node_modules/.bin/electron lib/app.js"
+    "app": "node_modules/.bin/electron server/app.js"
   },
   "author": "Daniel Hinds-Bond <007@007design.com> (http://007design.com/)",
   "license": "None",
   "dependencies": {
-    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "socket.io": "^2.0.3"
   },
