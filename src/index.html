@@ -6,10 +6,14 @@
 <body>
   <script type="text/javascript" src="assets/socket.io.js"></script>
   <script type="text/javascript">
-    var socket = io.connect('http://localhost:8000');
+    var socket = io.connect('http://localhost:8000', {query: {'type': 'browser'}});
     socket.on('update', function (data) {
       console.log(data);
     });
+
+    setTimeout(function() {
+      socket.emit('switch task', {name: 'new task'});
+    }, 5000);
   </script>
 </body>
 </html>
