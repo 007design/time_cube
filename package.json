@@ -13,6 +13,7 @@
   "license": "None",
   "dependencies": {
     "express": "^4.15.3",
+    "lowdb": "^0.16.2",
     "socket.io": "^2.0.3"
   },
   "devDependencies": {
