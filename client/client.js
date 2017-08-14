@@ -4,9 +4,14 @@ const io = require('socket.io-client'),
       fs = require('fs'),
       path = require('path');
 
+let pythonBridge = require('python-bridge');
+
+let python = pythonBridge();
+
 module.exports.startClient = function() {
   let calibration = require(path.join(__dirname, 'calibration.json'));
   const socket = io.connect('http://localhost:8000', {reconnect: true, query: {'type': 'client'}});
+  const sensorScript = fs.readFileSync('LSM330.py');
 
   let startTime, timer;
 
@@ -47,12 +52,13 @@ module.exports.startClient = function() {
     });
   }
 
-  function getX() {
-    return 0;
-  }
-
-  function getY() {
-    return 0;
+  function getOrientation() {
+    python.ex([sensorScript]).then(function(err) {
+      console.log(python.stdout);
+      if (err)
+        console.log(err);
+      // python.end();
+    });
   }
 
   socket.on('connect', function(data) {
